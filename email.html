@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Техномарт. Отправить email</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="modal modal-feedback">
+            <h2 class="visually-hidden">Отправить email</h2>
+            <form method="post" class="write-us-form" name="write-us-form" action="https://echo.htmlacademy.ru">
+                <div class="modal-feedback-container">
+                    <p>
+                        <label class="modal-feedback-name">
+                            Ваше имя: <br>
+                            <input type="text" name="name" placeholder="Имя Фамилия">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="modal-feedbackemail">
+                            Ваш e-mail:<br>
+                            <input type="text" name="email" placeholder="email@example.com">
+                        </label><br>
+                    </p>
+                </div>
+                <p class="modal-feedback-textarea-title">Текст письма:</p>
+                <textarea rows="10" cols="45" name="text" class="form-text" placeholder="В свободной форме">
+                </textarea><br>
+                <div class="modal-feedback button-wrapper">
+                    <button type="submit" class="button feedback-button">Отправить</button>
+                    <button type="button" class="close-button">Закрыть</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
