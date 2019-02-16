@@ -4,12 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <div class="header-top container">
-      <a class="logo header-logo" href="index.html">Техномарт</a>
+      <a class="header-logo" href="index.html">
+          <span class="visually-hidden">Техномарт</span>
+      </a>
       <a class="search" href="#">Поиск</a>
       <a class="favorites" href="#">Закладки: 0</a>
       <a class="cart" href="#">Корзина: 0</a>
@@ -79,41 +85,45 @@
     </section>
   </main>
   <footer class="footer container">
-    <a class="logo footer-logo" href="index.html">Техномарт</a>
-    <p>
-      г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-      +7 (812) 555-05-55
-    </p>
-    <nav class="footer-menu">
-      <ul>
-        <li><a href="#company">Компания</a></li>
-        <li><a href="#news">Новости</a></li>
-        <li><a href="#catalog">Каталог</a></li>
-        <li><a href="#delivery">Доставка</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-        <li><a href="#materials">Материалы</a></li>
-        <li><a href="#equipment">Техника</a></li>
-        <li><a href="#tool">Инструмент</a></li>
-        <li><a href="#offers">Спецпредложения</a></li>
+    <div class="footer-top container">
+      <a class="footer-logo" href="index.html">Техномарт</a>
+      <p>
+        г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        +7 (812) 555-05-55
+      </p>
+      <nav class="footer-menu">
+        <ul>
+          <li><a href="#company">Компания</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#materials">Материалы</a></li>
+          <li><a href="#equipment">Техника</a></li>
+          <li><a href="#tool">Инструмент</a></li>
+          <li><a href="#offers">Спецпредложения</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom container">
+      <p class="copyright">
+        © 2010-2017 Компания "Техномарт"<br>
+        Все права защищены
+      </p>
+      <ul class="social">
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Instagram</a></li>
       </ul>
-    </nav>
-    <p class="copyright">
-      © 2010-2017 Компания "Техномарт"<br>
-      Все права защищены
-    </p>
-    <ul class="social">
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Facebook</a></li>
-      <li><a class="social-button" href="#">Instagram</a></li>
-    </ul>
-    <p class="feedback">
-      Обратная связь:<br>
-      mail@htmlacademy.ru
-    </p>
-    <p class="developer">
-      Разработано -<br>
-      <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
-    </p>
+      <p class="feedback">
+        Обратная связь:<br>
+        mail@htmlacademy.ru
+      </p>
+      <p class="developer">
+        Разработано -<br>
+        <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
+      </p>
+    </div>
   </footer>
 
   <section class="modal modal-map" id="map_index">
