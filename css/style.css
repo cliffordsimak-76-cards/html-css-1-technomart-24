@@ -36,6 +36,10 @@ body {
   .header-top {
     background-color: #293449;
   }
+
+  .header-top a {
+    color: #ffffff;
+  }
   
   .logo {
     background-color: #ee3643;
@@ -95,7 +99,6 @@ body {
   }
 
   .header-navigation {
-    width: 940px;
     background-color: #32425c; 
   }
 
@@ -136,10 +139,6 @@ body {
   
   .footer-logo:active {
     background-color: #ba2732;
-  }
-
-  .footer-site-navigation {
-
   }
 
   .modal {
