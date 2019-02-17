@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <div class="header-top container">
-      <a class="header-logo" href="index.html">
-          <span class="visually-hidden">Техномарт</span>
+      <a class="logo header-logo">
+        <img src="img/logo-header.svg" width="138" height="23" alt="Логотип сайта Техномарт">
       </a>
       <a class="search" href="#">Поиск</a>
       <a class="favorites" href="#">Закладки: 0</a>
@@ -36,21 +36,21 @@
           <a href="login.html">Регистрация</a></li>
       </ul>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+          <li class="header-navigation-item">
             <a href="index.html">Главная</a></li>
-          <li class="navigation-item">
+          <li class="header-navigation-item">
             <a href="#company">Компания</a></li>
-          <li class="navigation-item">
+          <li class="header-navigation-item">
             <a href="catalog.html">Каталог</a></li>
-          <li class="navigation-item">
+          <li class="header-navigation-item">
             <a href="#news">Новости</a></li>
-          <li class="navigation-item">
+          <li class="header-navigation-item">
             <a href="#offers">Спецпредложения</a></li>
-          <li class="navigation-item">
+          <li class="header-navigation-item">
             <a href="#delivery">Доставка</a></li>
-          <li class="navigation-item">
+          <li class="header-navigation-item">
             <a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
@@ -86,24 +86,31 @@
   </main>
   <footer class="footer container">
     <div class="footer-top container">
-      <a class="footer-logo" href="index.html">Техномарт</a>
-      <p>
-        г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        +7 (812) 555-05-55
-      </p>
-      <nav class="footer-menu">
-        <ul>
+      <section class="footer-address">
+        <h2 class="visually-hidden">Адрес магазина Техномарт</h2>
+        <a class="logo footer-logo">
+          <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип сайта Техномарт">
+          <span class="visually-hidden">Техномарт</span>
+        </a>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+      </section>
+      <section class="footer-navigation">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <ul class="footer-site-navigation">
           <li><a href="#company">Компания</a></li>
           <li><a href="#news">Новости</a></li>
           <li><a href="#catalog">Каталог</a></li>
           <li><a href="#delivery">Доставка</a></li>
           <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <ul class="footer-catalog-navigation">
           <li><a href="#materials">Материалы</a></li>
           <li><a href="#equipment">Техника</a></li>
           <li><a href="#tool">Инструмент</a></li>
           <li><a href="#offers">Спецпредложения</a></li>
         </ul>
-      </nav>
+      </section>
     </div>
     <div class="footer-bottom container">
       <p class="copyright">

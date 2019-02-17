@@ -19,33 +19,44 @@ body {
     height: 1px;
     margin: -1px; 
   }
+  .phone-number {
+    color: #ee3643;
+  }
+  
+  .address {
+    color: #32425c;
+  }
+
+  h1 {
+    color: #ee3643;
+    font-size: 16px;
+    font-style: italic;
+  }
 
   .header-top {
-    height: 42px;
     background-color: #293449;
   }
   
+  .logo {
+    background-color: #ee3643;
+  }
+
   .header-logo {
-    position: absolute;
     width: 220px;
     height: 47px;
-    background-color: #ee3643;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   }
   
   .header-logo:hover,
   .header-logo:focus {
     background-color: #ca2c37;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   }
   
   .header-logo:active {
     background-color: #ba2732;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   }
+
   .submit {
     width: 150px;
-    height: 42px;
     background-color: #63a63e;
   }
 
@@ -60,19 +71,36 @@ body {
   }
 
   .header-middle {
-    height: 320px;
     background-color: #f4f7f9;
   }
 
-  .navigation {
+  .header-navigation,
+  .user-navigation,
+  .footer-site-navigation,
+  .footer-catalog-navigation {
+    list-style: none;
+  }
+
+  .header-navigation a,
+  .footer-site-navigation a {
+    color: #ffffffff;
+  }
+
+  .footer-catalog-navigation a {
+    color: #ffd180;
+  }
+
+  .user-navigation a {
+    color: #000000;
+  }
+
+  .header-navigation {
     width: 940px;
-    height: 60px;
-    box-shadow: inset 0px -5px 0 0 #293449;
     background-color: #32425c; 
   }
 
-  .navigation-item{
-    display: inline;
+  .header-navigation-item{
+    display: inline-block;
     color: #ffffff;
   }
 
@@ -83,23 +111,22 @@ body {
   .footer {
     font-size: 16px;
   }
+  
+  .footer-address p {
+    color: #f3f7f9;
+  }
 
   .footer-top {
-    height: 193px;
     background-color: #32425c; 
   }
 
   .footer-bottom {
-    height: 107px;
     background-color: #293449; 
   }
 
   .footer-logo {
-    position: absolute;
     width: 220px;
     height: 68px;
-    background-color: #ee3643;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   }
   
   .footer-logo:hover,
@@ -109,6 +136,10 @@ body {
   
   .footer-logo:active {
     background-color: #ba2732;
+  }
+
+  .footer-site-navigation {
+
   }
 
   .modal {
