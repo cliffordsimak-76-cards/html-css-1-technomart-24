@@ -225,6 +225,11 @@ ul {
   color: #ffffff;
 }
 
+.footer-bottom p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .footer-bottom .container {
   display: flex;
   justify-content: space-between;
