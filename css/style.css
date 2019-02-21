@@ -213,6 +213,7 @@ ul {
 .footer-top  {
   background-color: #32425c;
   color: #ffffff;
+  padding-bottom: 53px;
 }
 
 .footer-top .container {
@@ -223,9 +224,12 @@ ul {
 .footer-bottom {
   background-color: #293449;
   color: #ffffff;
+  padding: 40px 0 35px 0;
 }
 
 .footer-bottom p {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 18px;
 }
