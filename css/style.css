@@ -19,6 +19,10 @@ ul {
   padding-left: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -54,17 +58,12 @@ ul {
 
 .header-bar {
   background-color: #293449;
-  margin-bottom: 46px;
-}
-
-.header-bar a {
   font-size: 17px;
   line-height: 18px;
 }
 
 .header-bar .container {
   display: flex;
-  justify-content: space-between;
 }
 
 .header-bar a:hover {
@@ -77,40 +76,59 @@ ul {
 } 
 
 .header-logo {
-	padding: 12px 55px;
+  padding: 12px 55px;
+  display: block
+}
+
+.header-bar .header-logo:hover{
+  background-color: #ca2c37;
+}
+
+.header-bar .header-logo:active{
+  background-color: #ba2732;
 }
 
 .search-form {
   display: flex;
-  margin-right: auto;
+}
+
+.search-input {
+  background-color: #293449;
+  color: #ffffff;
+	font-size: 17px;
+	line-height: 18px;
+	border: none;
+  outline: none;
+  padding-left: 49px;
+  padding-right: 62px;
 }
 
 .favorites {
-  padding: 14px 46px 13px 27px;
+  padding: 14px 28px 13px 44px;
 }
 
 .cart {
-  padding: 15px 31px;
+  padding: 14px 31px 13px 50px;
 }
 
 .submit {
   background-color: #63a63e;
-  padding: 15px 21px;
+  padding: 14px 21px;
 }
 
-.submit:hover,
-.submit:focus {
+.header-bar .submit:hover  {
   background-color: #5fbb2d;
 }
 
-.submit:active {
-  color: rgba(255, 255, 255, 0.5);
+.header-bar .submit:active {
+  color: #f1f5f7;
   background-color: #518534;
 }
 
 .header-middle {
   display: flex;
   justify-content: space-between;
+  margin-top: 54px;
   margin-bottom: 44px;
 }
 
@@ -120,18 +138,16 @@ ul {
 	font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  margin: 0;
-  margin-top: 8px;
-  margin-left: 53px;
+  padding: 8px 86px 0 53px;
 }
 
-.navigation-contacts {
+.phone-address-wrapper {
   display: flex;
   flex-direction: column;  
-  margin-left: 71px;
+  padding-right: 83px;
 }
 
-.navigation-contacts .phone-number {
+.phone-address-wrapper .phone-number {
   color: #ee3443;
 	font-size: 21px;
 	line-height: 21px;
@@ -139,7 +155,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.navigation-contacts .address {
+.phone-address-wrapper .address {
   color: #32425c;
 	font-size: 14px;
 	line-height: 24px;
@@ -150,13 +166,14 @@ ul {
 .user-navigation {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  margin-left: 69px;
+  margin-left: 19px;
 }
 
-.user-navigation-item a{
+.user-navigation a {
   background-color: #ffffff;
   color: #000000;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .header-navigation {
