@@ -81,6 +81,8 @@ img {
 }
 
 .logo {
+  display: block;
+  text-align: center;
   background-color: #ee3643;
 	border-bottom: 5px solid #b52933;
 }
@@ -96,7 +98,6 @@ img {
 
 .header-logo {
   flex-basis: 220px;
-  text-align: center;
   padding-top: 13px;
   padding-bottom: 7px;
 }
@@ -202,7 +203,6 @@ img {
 .header-navigation-list {
   display: flex;
   justify-content: space-between;
-  height: 55px;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
   padding-left: 52px;
@@ -214,7 +214,7 @@ img {
   font-size: 17px;
   line-height: 17px;
   padding-top: 22px;
-  padding-bottom: 26px;
+  padding-bottom: 16px;
 }
 
 .about-us-contacts-wrapper {
@@ -285,25 +285,62 @@ img {
 .footer-top  {
   background-color: #32425c;
   color: #ffffff;
-  padding-bottom: 53px;
 }
 
 .footer-top .container {
   display: flex;
+}
+
+.footer-address {
+  flex-basis: 323px;
+  padding-bottom: 45px;
+}
+
+.footer-logo {
+  padding-top: 20px;
+  padding-bottom: 13px;
+  margin-right: 103px;
+}
+
+.footer-address p {
+  color: #f3f7f9;
+  margin: 0;
+  padding-top: 32px;
+}
+
+.footer-address a {
+  color: #f3f7f9;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+}
+
+.footer-site-navigation {
+  display: flex;
   justify-content: space-between;
+  padding-top: 42px;
+  padding-left: 67px;
+}
+
+.footer-site-navigation  a {
+  color: #f3f7f9;
+}  
+
+.footer-catalog-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 34px;
+  padding-left: 90px;
+}
+
+.footer-catalog-navigation a {
+  color: #ffd180;
 }
 
 .footer-bottom {
   background-color: #293449;
   color: #ffffff;
-  padding: 40px 0 35px 0;
-}
-
-.footer-bottom p {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 18px;
 }
 
 .footer-bottom .container {
@@ -311,28 +348,21 @@ img {
   justify-content: space-between;
 }
 
-.footer-navigation {
-  display: flex;
-  flex-direction: column;  
+.footer-bottom a {
+  color: #ffd180;
 }
 
-.footer-site-navigation {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-catalog-navigation {
-  display: flex;
-  justify-content: space-between;
+.footer-bottom p {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 31px;
 }
 
 .social {
   display: flex;
-  justify-content: center;
-}
-
-.footer-bottom a {
-  color: #ffd180;
+  padding-top: 40px;
 }
 
 .bread-crumbs {
