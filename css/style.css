@@ -404,11 +404,24 @@ img {
 	margin-bottom: 60px;
 }
 
+.filters {
+  flex-basis: 100px;
+}
+
+.filter-producer {
+  border: 0;
+  text-transform: uppercase;
+}
+
+.filter-energy {
+  border: 0;
+  text-transform: uppercase;
+}
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 700px;
   margin: 0px;
-	margin-bottom: 32px;
 	padding: 0px;
 }
 

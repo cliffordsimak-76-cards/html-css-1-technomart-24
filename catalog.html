@@ -60,7 +60,6 @@
                 <li class="bread-crumbs-right"><a href="#">Инструмент</a></li>
                 <li class="bread-crumbs-right"><a href="#">Перфораторы</a></li>
         </div>
-        </div>
 
         <div class="container">
             <h2 class="catalog-page">Перфораторы</h2>
@@ -69,8 +68,8 @@
         <div class="container">
             <div class="catalog-page-wrapper">
                 <section class="filters">
-                    <form class="catalog-result" action="https://echo.htmlacademy.ru/" method="get">
-                        <fieldset>
+                    <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+                        <fieldset class="filter-producer">
                             <legend>Производители:</legend>
                             <label>
                                 <input type="checkbox" name="bosch" checked>
@@ -88,7 +87,7 @@
                                 <input type="checkbox" name="hitachi">
                                 Hitachi</label>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="filter-energy">
                             <legend>Питание:</legend>
                             <input type="radio" name="battery" id="battery">
                             <label for="battery">Аккумуляторные</label>
