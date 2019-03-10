@@ -54,37 +54,10 @@ img {
   padding-bottom: 10px;
 }
 
-.header {
-  background-color: #f1f5f7;
-  min-height: 320px;
-}
-
-.header-bar {
-  height: 42px;
-  background-color: #293449;
-  font-size: 17px;
-  line-height: 18px;
-}
-
-.header-bar a:hover {
-	background-color: #212a3a;
-}
-
-.header-bar a:active {
-  color: #8b8e94;
-  background-color: #161d29;
-} 
-
-.header-bar .container{
-  display: flex;
-  align-items: flex-start;
-}
-
 .logo {
-  display: block;
-  text-align: center;
   background-color: #ee3643;
-	border-bottom: 5px solid #b52933;
+  text-align: center;
+  border-bottom: 5px solid #b52933;
 }
   
 .logo:hover,
@@ -96,10 +69,43 @@ img {
   background-color: #ba2732;
 }
 
-.header-logo {
-  flex-basis: 220px;
-  padding-top: 13px;
-  padding-bottom: 7px;
+.header {
+  background-color: #f1f5f7;
+}
+
+.header-bar {
+  height: 42px;
+  background-color: #293449;
+}
+
+.header-bar .container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.header-bar a {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+
+.header-bar a:hover {
+	background-color: #212a3a;
+}
+
+.header-bar a:active {
+  color: #8b8e94;
+  background-color: #161d29;
+} 
+
+a.header-logo {
+  padding-left: 55px;
+  padding-right: 54px;
+  padding-bottom: 6px;
 }
 
 .header-bar .header-logo:hover{
@@ -112,6 +118,7 @@ img {
 
 .search-form {
   display: flex;
+  flex-grow: 1;
 }
 
 .search-input {
@@ -120,25 +127,70 @@ img {
 	line-height: 18px;
 	border: none;
   outline: none;
-  padding: 14px 64px 10px 49px;
+  padding: 14px 14px 10px 49px;
 }
 
-.favorites {
-  flex-basis: 79px;
-  padding: 14px 28px 10px 43px;
+.search-form::before{
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 12px;
+  left: 18px;
+  background-image: url("../img/icon/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: .3;
 }
 
-.cart {
-  flex-basis: 71px;
-  padding: 14px 29px 10px 50px;
+a.favorites {
+  padding-left: 44px;
+  padding-right: 28px;
 }
 
-.submit {
-  flex-basis: 150px;
+.favorites::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  top: 12px;
+  left: 17px;
+  background-image: url("../img/icon/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: .3;
+}
+
+.favorites:hover::before {
+  opacity: 1;
+}
+
+a.cart {
+  padding-left: 50px;
+  padding-right: 31px;
+}
+
+.cart::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 12px;
+  left: 18px;
+  background-image: url("../img/icon/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: .3;
+}
+
+.cart:hover::before {
+  opacity: 1;
+}
+
+a.submit {
   background-color: #63a63e;
-  text-align: center;
-  padding-top: 14px;
-  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 22px;
 }
 
 .header-bar .submit:hover  {
@@ -366,6 +418,74 @@ img {
 	padding-left: 24px;
 	margin: 0;
 	color: #ffffff;
+}
+
+.service {
+	background-color: #f4f7f9;
+	margin-bottom: 82px;
+} 
+
+.service p {
+  font-family: "PT sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.service h2 {
+	font-size: 30px;
+  line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000000;
+	padding-top: 68px;
+	padding-bottom: 25px;
+	margin: 0;
+}
+
+.service-wrapper {
+	display: flex;
+	margin: 0;
+	margin-top: 55px;
+	padding-bottom: 102px;
+}
+
+.service-guarantee {
+	display: none;
+}
+
+.service-credit {
+	display: none;
+}
+
+.button-service {
+	display: block;
+	background-color: #32425c;
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: 700;
+	text-align: left;
+	padding: 21px 140px 21px 22px;
+	border: none;
+	border-top: 1px solid#4d637b;
+}
+
+.button-service:hover {
+	background-color: #293449;
+}
+
+.button-service-current:hover {
+	background-color: #ffffff;
+}
+
+.button-service-current {
+	display: block;
+	background-color: #ffffff;
+	color: #32425c;
+	font-size: 21px;
+	line-height: 30px;
+	border-top: none;
 }
 
 .about-us-contacts-wrapper {
