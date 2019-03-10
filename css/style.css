@@ -122,13 +122,13 @@ a.header-logo {
 }
 
 .search-input {
+  color: #ffffff;
   background-color: #293449;
 	font-size: 17px;
 	line-height: 18px;
 	border: none;
   outline: none;
-  padding: 14px 14px 10px 0;
-  color: #ffffff;
+  padding: 14px 14px 10px 49px;
 }
 
 .search-label {
@@ -248,6 +248,7 @@ a.submit {
 
 .header-middle {
   display: flex;
+  justify-content: space-between;
   padding-top: 46px;
   padding-bottom: 33px;
 }
@@ -259,7 +260,8 @@ a.submit {
   font-size: 16px;
   line-height: 23px;
   flex-basis: 197px;
-  padding: 4px 70px 0 53px;
+  padding-top: 4px;
+  padding-left: 53px;
 }
 
 .phone-address-wrapper {
@@ -288,13 +290,51 @@ a.submit {
 
 .user-navigation {
   display: flex;
-  padding-left: 69px;
 }
 
 .user-navigation a {
   display: block;
   background-color: #ffffff;
   color: #000000;
+  padding: 11px 25px;
+}
+
+.user-navigation a:hover {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: #0000004c;
+}
+
+.user-navigation li {
+  position: relative;
+  margin-left: 10px;
+}
+
+a.login-link {
+  padding-left: 48px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 14px;
+  background-image: url("../img/icon/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: .3;
+}
+
+.login-link:hover::before {
+  opacity: 1;
+}
+
+.login-link:active::before {
+  opacity: .3;
 }
 
 .header-navigation-list {
