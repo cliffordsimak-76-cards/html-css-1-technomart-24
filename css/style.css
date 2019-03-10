@@ -50,8 +50,8 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 11px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header {
@@ -206,16 +206,48 @@ img {
   justify-content: space-between;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
-  padding-left: 52px;
-	padding-right: 55px;
+  padding: 22px 55px 16px 52px;
 }
 
 .header-navigation-list a {
   display: block;
   font-size: 17px;
   line-height: 17px;
-  padding-top: 22px;
-  padding-bottom: 16px;
+}
+
+.section-header {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+  background-color: #f9f5f0;
+  padding: 26px 24px 25px 30px;
+}
+
+.section-header h2 {
+  font-size: 30px;
+  line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #32425c;
+	margin: 0;
+	padding: 0;
+}
+
+.section-header a {
+  flex-basis: 253px;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+	padding-top: 21px;
+}
+
+.popular-producer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	padding-top: 21px;
 }
 
 .categories-wrapper {
@@ -300,15 +332,6 @@ img {
 	background-position:  191px 32px;   
 }
 
-.catalog-promo {
-  background-color: #685c53;
-}
-
-.catalog-button {
-  border: 0;
-  padding: 0;
-}
-
 .product-catalog li:nth-child(1) {
   background-image: url(../img/category/slider-perforator.jpg);
 }
@@ -343,16 +366,6 @@ img {
 	padding-left: 24px;
 	margin: 0;
 	color: #ffffff;
-}
-
-.button-main {
-	padding-top: 11px;
-	padding-bottom: 10px;
-	font-size: 14px;
-	line-height: 18px;
-	background-color: #ee3643;
-	color: #ffffff;
-	text-align: center;
 }
 
 .about-us-contacts-wrapper {
