@@ -250,7 +250,7 @@ a.submit {
   display: flex;
   justify-content: space-between;
   padding-top: 46px;
-  padding-bottom: 33px;
+  padding-bottom: 39px;
 }
 
 .header-middle h1 {
@@ -376,14 +376,33 @@ a.login-link {
 .popular-list {
   display: flex;
   justify-content: space-between;
-	padding-top: 21px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .popular-producer-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-	padding-top: 21px;
+  padding-bottom: 81px;
+}
+
+.popular-producer li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  min-height: 145px;
+  border: 1px solid #eaeaea;
+  margin-top: 20px;
+}
+
+.popular-producer li:hover {
+	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-producer li:active {
+	opacity: 0.3;
 }
 
 .categories-wrapper {
@@ -409,13 +428,11 @@ a.login-link {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #ffffff;
   text-align: center;
   min-width: 135px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 19px 142px 0 23px;
-  margin-bottom: 22px;
+  margin: 19px 142px 22px 23px;
   background: rgba(0,0,0,.1);
 }
 
@@ -428,14 +445,14 @@ a.login-link {
   padding-bottom: 20px;
 }
 
-.categories-left li:nth-child(1) {
+.categories-left .materials {
 	background-color: #ffbf47;
 	background-image: url(../img/category/category-materials.svg);
 	background-repeat: no-repeat;
 	background-position: 213px 31px;
 }
 
-.categories-left li:nth-child(2) {
+.categories-left .tool {
 	background-color: #3bbce3; 
 	background-image: url(../img/category/category-tool.svg);
 	background-repeat: no-repeat;
@@ -447,21 +464,21 @@ a.login-link {
   justify-content: space-between;
 }
 
-.categories-right li:nth-child(1) {
+.categories-right .equipment {
 	background-color: #dc91d8;
 	background-image: url(../img/category/category-equipment.svg);
 	background-repeat: no-repeat;
 	background-position:  191px 31px;     
 }
 
-.categories-right li:nth-child(2) {
+.categories-right .discount {
 	background-color: #8ed78f; 
 	background-image: url(../img/category/category-discount.svg);
 	background-repeat: no-repeat;
 	background-position:  196px 26px;  
 }
 
-.categories-right li:nth-child(3) {
+.categories-right .delivery {
 	background-color: #ffc047;
 	background-image: url(../img/category/category-delivery.svg);
 	background-repeat: no-repeat;
@@ -479,7 +496,7 @@ a.login-link {
 }
 
 .product-catalog-item {
-	display: none;
+  display: none;
 }
 
 .product-catalog-item-active {
@@ -833,19 +850,91 @@ a.login-link {
   text-align: center;
   line-height: 20px;
   font-weight: 700;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .catalog-item:hover{
   box-shadow: 0px 10px 25px 0 #29344980;
 }
 
-.catalog-item .catalog-item-button {
+.catalog-item-button {
   display: none;
 }
 
 .catalog-item:hover .catalog-item-button {
   display: block;
+  position: absolute;
+  margin: 0;
+}
+
+.item-button {
+	display: block;
+	text-transform: uppercase;    
+  border-radius: 3px;
+  font-size: 14px;
+	line-height: 18px;
+}
+
+.item-button-buy {
+  position: relative;
+  top: 44px;
+	border: 3px solid #63a63e;
+	border-bottom-color:rgba(41, 52, 73, 0.5); 
+	background-color: #63a63e;
+  padding: 10px 45px 10px 49px;
+}
+
+.item-button-buy::before {
+  position: absolute;
+	content: "";
+	left: 12px;
+	top: 11px;
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/icon/icon-cart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+}
+
+.item-button-buy::hover {
+	background-color: #5fbb2d;
+	border: 3px solid #5fbb2d;
+	border-bottom-color: #367315;
+}
+
+.item-button-buy::active {
+	background-color: #518534;
+	border: 3px solid #518534;
+}
+
+.item-button-favorite {
+  position: relative;
+  top: 89px;
+	border: 3px solid #63a63e;
+	background-color: #ffffff;
+  padding: 10px 30px 10px 30px;
+  color: #32425c;
+}
+
+.item-button-favorite::before {
+  position: absolute;
+	content: "";
+	left: 12px;
+	top: 11px;
+	width: 15px;
+	height: 15px;
+	opacity: 0.3;
+}
+
+.item-button-favorite::hover {
+	background-color: #ffffff;
+	border: solid 3px #32425c;
+}
+
+.item-button-favorite::active {
+	background-color: #518534;
+	border: 3px solid #518534;
 }
 
 .catalog-item-price {
@@ -869,7 +958,8 @@ a.login-link {
 }
 
 .pagination-list {
-	display: flex;
+  display: flex;
+  padding-top: 52px;
 }
 
 .pagination-item {
