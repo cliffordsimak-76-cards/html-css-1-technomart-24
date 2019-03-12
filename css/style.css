@@ -55,6 +55,7 @@ img {
 }
 
 .logo {
+  display: block;
   background-color: #ee3643;
   text-align: center;
   border-bottom: 5px solid #b52933;
@@ -545,14 +546,66 @@ a.login-link {
 }
 
 .service-wrapper {
-	display: flex;
+  display: flex;
+  justify-content: space-between;
 	margin: 0;
-	margin-top: 55px;
+	padding-top: 55px;
 	padding-bottom: 102px;
+}
+
+.service-list {
+	position: relative;
+	padding-top: 13px;
+  margin: 0;
+	padding: 0;
+}
+
+.service .service-list::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 279px;
+  top: -30px;
+  left: 230px;
+  background-image: url(../img/service/service-shadow.png);
+}
+
+.service-caption {
+    padding-right: 345px;
+}
+
+.service-caption h3 {
+  font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #32425c;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 23px;
+}
+
+.request {
+  display: none;
 }
 
 .service-guarantee {
 	display: none;
+}
+
+.service-delivery {
+	position: relative;
+}
+
+
+.service-delivery::after{
+  position: absolute;
+	content: "";
+	width: 468px;
+	height: 261px;
+	top: 21px;
+  left: 151px;
+	background-image: url(../img/service/service-delivery.png);
 }
 
 .service-credit {
@@ -566,7 +619,6 @@ a.login-link {
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: 700;
-	text-align: left;
 	padding: 21px 140px 21px 22px;
 	border: none;
 	border-top: 1px solid#4d637b;
@@ -668,7 +720,7 @@ a.login-link {
   padding-bottom: 45px;
 }
 
-.footer-logo {
+a.footer-logo {
   padding-top: 20px;
   padding-bottom: 13px;
   margin-right: 103px;
@@ -813,6 +865,7 @@ a.login-link {
 }
 
 .filter-option {
+  position: relative;
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
@@ -828,6 +881,70 @@ a.login-link {
   flex-basis: 140px;
 	padding: 15px 39px 14px 39px;
 }
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	top: -2px;
+	left: -34px;
+	background-image: url(../img/controls/checkbox-off.svg);
+	background-repeat: no-repeat;
+	opacity: 0.7;
+}
+
+.filter-checkbox input[type="checkbox"]:hover + .checkbox-indicator,
+.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+	opacity: 1;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	background-image: url(../img/controls/checkbox-on.svg);
+	background-repeat: no-repeat;
+}
+
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+	opacity: 0.3;
+}
+
+.filter-radio input[type="radio"] + .radio-indicator {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -2px;
+	left: -34px;
+	background-image: url(../img/controls/radio-off.svg);
+	background-repeat: no-repeat;
+	opacity: 0.7;
+}
+
+.filter-radio input[type="radio"]:hover + .radio-indicator,
+.filter-radio input[type="radio"]:focus + .radio-indicator {
+	opacity: 1;
+}
+
+.filter-radio input[type="radio"]:checked + .radio-indicator::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/controls/radio-on.svg);
+	background-repeat: no-repeat;
+	opacity: 0.7;
+}
+
+.filter-radio input[type="radio"]:checked:hover + .radio-indicator::after {
+	opacity: 1;
+}
+
+.filter-radio input[type="radio"]:disabled + .radio-indicator {
+	opacity: 0.3;
+}
+
 
 .catalog-list {
   display: flex;
