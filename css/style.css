@@ -52,6 +52,8 @@ img {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  border: 0;
+  color: #ffffff;
 }
 
 .button:hover {
@@ -1232,5 +1234,75 @@ a.footer-logo {
 }
 
 .modal {
-  display: none;
+  position: fixed;
+  line-height: 18px;
+  box-shadow: 0px 20px 40px 0 #000000c0;
+  font-weight: 700;
 } 
+
+.modal-feedback {
+  top: 100px;
+  border-top: 7px solid #ff5257;
+  width: 620px;
+}
+
+.modal-feedback-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 47px 80px 37px 80px;
+}
+
+.modal-feedback-container p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.feedback-message {
+  flex-grow: 1;
+}
+
+.modal-feedback-container label {
+  padding-bottom: 10px;
+}
+
+.modal-feedback-container input {
+  font-size: 13px;
+  line-height: 18px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  margin-bottom: 21px;
+  padding: 8px 87px 8px 16px;
+}
+
+.modal-feedback-container textarea {
+  font-size: 13px;
+  line-height: 18px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  padding: 13px 16px 7px 16px;
+}
+
+.modal-feedback-button-wrapper {
+  display: flex;
+  background-color: #f4f4f4;
+  padding: 37px 80px;
+}
+
+.email-button {
+  flex-grow: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  background-image: url(../img/icon/icon-close.svg);
+  font-size: 0;
+  border: 0;
+  z-index: 2;
+}
