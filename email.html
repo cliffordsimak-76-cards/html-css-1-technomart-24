@@ -4,34 +4,36 @@
 <head>
     <meta charset="utf-8">
     <title>Техномарт. Отправить email</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <main class="container">
         <section class="modal modal-feedback">
             <h2 class="visually-hidden">Отправить email</h2>
-            <form method="post" class="write-us-form" name="write-us-form" action="https://echo.htmlacademy.ru">
+            <form method="post" class="modal-feedback-form" name="write-us-form" action="https://echo.htmlacademy.ru">
                 <div class="modal-feedback-container">
                     <p>
-                        <label class="modal-feedback-name">
-                            Ваше имя: <br>
-                            <input type="text" name="name" placeholder="Имя Фамилия">
-                        </label>
+                        <label for="feedback-name">Ваше имя:</label>
+                        <input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
                     </p>
                     <p>
-                        <label class="modal-feedbackemail">
-                            Ваш e-mail:<br>
-                            <input type="text" name="email" placeholder="email@example.com">
-                        </label><br>
+                        <label for="feedback-email">Ваш e-mail:</label>
+                        <input type="text" name="email" id="feedback-email" placeholder="email@example.com">
+                    </p>
+                    <p class="feedback-message">
+                        <label for="feedback-text">Текст письма:</label>
+                        <textarea name="message" id="feedback-text" rows="5"
+                            placeholder="В свободной форме"></textarea>
                     </p>
                 </div>
-                <p class="modal-feedback-textarea-title">Текст письма:</p>
-                <textarea rows="10" cols="45" name="text" class="form-text" placeholder="В свободной форме">
-                </textarea><br>
-                <div class="modal-feedback button-wrapper">
-                    <button type="submit" class="button feedback-button">Отправить</button>
-                    <button type="button" class="close-button">Закрыть</button>
+                <div class="modal-feedback-button-wrapper">
+                    <button type="submit" class="button email-button">Отправить</button>
                 </div>
+                <button type="button" class="modal-close">Закрыть</button>
             </form>
         </section>
     </main>
